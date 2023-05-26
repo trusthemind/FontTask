@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100%;
     display: flex;
@@ -29,33 +30,42 @@
   }
 
   #chooser {
-    display: flex;
     gap: 20px;
   }
 
   #chooser button {
     padding: 10px 20px;
+    font-size: 18px;
     border: none;
     outline: none;
     background-color: white;
+    text-align: center;
+
   }
 
-  #chooser button:active {
-    background-color: antiquewhite;
+  #chooser button:hover {
+    color: #f3722c;
   }
 
   #card {
-    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(185, 185, 185, 0.75);
     border-radius: 5px;
     margin: 0 auto;
-    /* Center the #card element horizontally */
+    min-width: 600px;
+    min-height: 450px;
     align-self: center;
-    /* Center the #card element vertically */
   }
 
   #top {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }

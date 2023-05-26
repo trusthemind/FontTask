@@ -1,0 +1,9 @@
+#str p {
+    text-align: center;
+    margin:40px;
+    padding: 20px;
+    outline: 2px solid rgba(185, 185, 185, 0.95);
+    outline-offset: 2.5px;
+    line-break: auto;
+    color: rgb(243, 114, 44);
+}

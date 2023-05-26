@@ -11,15 +11,14 @@ const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window
 
 
 function reducer(state = initialState, action) {
-    console.log(action.type);
+    console.log(action)
     switch (action.type) {
         case "getTabs":
-            console.log(action.type);
-            return { ...state, tabs: [...state, action.payload] };
+            return [...state, { data: action.payload }];
         case "getTabA":
-            return { ...state, tabA: [...state, action.payload] };
+            return [...state, { data: action.payload }];
         case "getTabB":
-            return { ...state, tabB: [...state, action.payload] };
+            return [...state, { data: action.payload }];
         default:
             return state;
     }

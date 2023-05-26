@@ -1,20 +1,19 @@
-import { tabsApi } from "./apiSlice";
-
-export const getTabs = () => {
+export const getTabs = (data) => {
+  
   return {
     type: 'getTabs',
-    payload: "gettabs"
+    payload: "getTabs"
   }
 };
 
-export const getTabA = () => {
+export const getTabA = (data) => {
   return {
     type: 'getTabA',
     payload: "gettabsA"
   };
 };
 
-export const getTabB = () => {
+export const getTabB = (data) => {
   return {
     type: 'getTabB',
     payload: "getTabB"

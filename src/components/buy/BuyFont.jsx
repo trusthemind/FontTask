@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { tabsApi } from "../service/apiSlice";
+import "./style.css"
 
 function BuyFont() {
-    return ( 
-        <div>
-        <h1>buy</h1>
+    const { data, isLoading } = tabsApi.useGetFont_BQuery();
+
+    useEffect(() => {
+    }, [data])
+
+    if (isLoading) {
+        return <div className="loading">Loading...</div>;
+    }
+    return (
+        <div id="str">
+            <p>{data.content}</p>
         </div>
-     );
+    );
 }
 
 export default BuyFont;
