@@ -17,11 +17,11 @@ function App({ onGetTabs, onGetTabA, onGetTabB }) {
   }, [data]);
 
   if (isLoading) {
-    return <div className="loading">Loading...</div>;
+    return <div id="loading"></div>;
   }
 
   if (error) {
-    return <div className="error">Error: {error.message}</div>;
+    return <div id="error">Error: {error.status}</div>;
   }
 
   return (

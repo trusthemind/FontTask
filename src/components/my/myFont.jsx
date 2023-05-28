@@ -8,7 +8,7 @@ function MyFont() {
   }, [data])
 
   if (isLoading) {
-    return <div className="loading">Loading...</div>;
+    return <div id="loading"></div>;
   }
 
   return (

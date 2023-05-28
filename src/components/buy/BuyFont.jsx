@@ -9,7 +9,7 @@ function BuyFont() {
     }, [data])
 
     if (isLoading) {
-        return <div className="loading">Loading...</div>;
+        return <div id="loading"></div>;
     }
     return (
         <div id="str">

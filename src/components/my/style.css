@@ -1,3 +1,66 @@
+@media screen and (max-width: 1024px) {
+    #item {
+        height: 125px !important;
+        width: 125px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #item {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    ul li {
+        font-size: 14px !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    ul li::marker {
+        font-size: 20px !important;
+    }
+}
+
+#fonts #cardItem:nth-child(1) {
+    margin-top: 0px !important;
+}
+
+@media screen and (max-width: 480px) {
+    #item {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    #fonts {
+        margin-top: 40px !important;
+        gap: 0px !important;
+        padding: 20px 40px 20px 20px !important;
+    }
+
+    ul {
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+
+    #fonts #cardItem:nth-child(1) {
+        width: 100% !important;
+        height: 100% !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+
+    #fonts #cardItem {
+        align-items: stretch !important;
+    }
+
+    ul li::marker {
+        font-size: 10px !important;
+    }
+}
+
 #fonts {
     display: grid;
     justify-items: center;
@@ -25,20 +88,19 @@
 }
 
 #fonts #cardItem:nth-child(1) ul {
-    width: 80%;
+    width: 100%;
     margin-left: -25px;
 }
 
 #fonts #cardItem:nth-child(2),
 #fonts #cardItem:nth-child(3) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-
 
 #fonts #item {
     outline: 2px solid black;
@@ -65,6 +127,6 @@ ul li::marker {
 }
 
 #fonts ul li:hover,
-#fonts #cardItem:hover  ul li{
+#fonts #cardItem:hover ul li {
     color: black;
 }
